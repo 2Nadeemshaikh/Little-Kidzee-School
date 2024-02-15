@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/addmission.css">
+     <title>Little Kidzee School</title>
+</head>
+
+<body>
+
+    <form class="form" action="register" method="get">
+        <div class="container">
+            <center>
+                <h1> Addmission Form</h1>
+            </center>
+           <!-- <form class="form" action="register"> -->
+            <hr>
+            <label> First Name </label>
+            <input type="text" name="firstname" placeholder="enter the first name" size="15" required />
+            <label> Middle Name: </label>
+            <input type="text" name="middlename" placeholder="enter the middle name" size="15" required />
+            <label> Last Name: </label>
+            <input type="text" name="lastname" placeholder="enter the last name" size="15" required />
+            <div>
+                <label>
+                    Course:
+                </label>
+                <select name="course">
+                    <option value="Play Group" selected>Play Group</option>
+                    <option value="Nursery">Nursery</option>
+                    <option value="Sr.KG">Sr.KG</option>
+                    <option value="Jr.KG">Jr.KG</option>
+                    <option value="1st">1st</option>
+                    <option value="2nd">2nd</option>
+                </select>
+            </div>
+            <div>
+                <label>
+                    Gender :
+                </label><br>
+                <div class="radiobox">
+                <input type="radio" value="Male" name="gender" checked> Male
+                <input type="radio" value="Female" name="gender"> Female
+                <input type="radio" value="Other" name="gender"> Other
+            </div>
+            </div>
+            
+            <div>
+             <label>
+                DOB:
+            </label>
+            <input type="date" name="dob">
+            </div>
+            
+            <label>
+                Phone No:
+            </label>
+            <!-- <input type="text" name="country code" placeholder="Country Code"  value="+91" size="2"/>    -->
+            <input type="text" name="phone" placeholder="enter your phone no." size="10" required>
+
+            <label>
+                City:
+            </label>
+            <input type="text" name="city" placeholder="enter city name" required> 
+
+            Current Address:
+            <textarea cols="80" rows="5" placeholder="current address" name="address" required></textarea>
+
+            <label for="email"
+            ><b>Email</b></label>
+            <input type="text" placeholder="enter email" name="email">
+
+            <!-- <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <label for="psw-repeat"><b>Re-type Password</b></label>
+            <input type="password" placeholder="Retype Password" name="psw-repeat" required> -->
+
+            <button type="submit" class="registerbtn">Submit</button>
+            <button type="reset" class="registerbtn">Reset</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Lilita+One&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Merienda:wght@300..900&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Lilita+One&family=Lora:ital,wght@0,400..700;1,400..700&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Merienda:wght@300..900&family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header div {
+    max-width: 100%;
+    text-align: center;
+    padding: 15px;
+    font-family: "Lilita One", sans-serif;
+    background-color: #ebe9e9d9;
+    border: 1px solid black;
+    position: sticky;
+    top: 0;
+    /* z-index: 100; */
+}
+
+
+.pages a {
+    text-decoration: none;
+    padding: 15px;
+}
+
+nav div img {
+    width: 90px;
+    position: relative;
+}
+
+.school_name {
+    display: flex;
+    flex-direction: column;
+    color: red;
+}
+
+div ul {
+    
+    list-style: none;
+    display: flex;
+    
+}
+
+div ul li {
+    
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    max-width: 100%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+.all {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    background-color: brown;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.first {
+    /* display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    align-items: center; */
+    position: relative;
+}
+
+.note img {
+    width: 100%;
+    position: relative;
+}
+
+.mySlides {
+    position: absolute;
+    top: 40px;
+    display: none;
+    max-width: 1000px;
+    margin-left: 300px;
+}
+
+.mySlides img {
+    width: 100%;
+
+}
+
+/* .note {
+    position: relative;
+}
+
+.note img {
+    width: 100%;
+}
+
+.mySlides { */
+/* display: none; */
+/* max-width: 1000px;
+    margin: auto;
+    position: relative;
+    top: 30px;
+}
+
+img {
+    position: absolute;
+
+} */
+
+/* Number text (1/3 etc) */
+/* .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+} */
+
+/* The dots/bullets/indicators */
+/* .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+} */
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation: fade ease-in-out infinite;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+/* @media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+} */
+.seperation1 {
+    top: -4px;
+    height: 8px;
+    background-color: rgb(151 47 106);
+    position: relative;
+}
+
+.about {
+    background-color: #d3c8c857;
+    text-align: center;
+    padding: 0 170px 50px 170px;
+    text-align: justify;
+    top: -4px;
+    position: relative;
+    border-bottom: 1px solid rgb(219, 204, 204);
+}
+
+.about_head{
+    font-size: 30px;
+    padding-top: 50px ;
+    padding-bottom: 30px;
+}
+
+.about p{
+     font-size: 21px;
+     font-family: "Itim", cursive;
+     font-weight: 400;
+     font-style: normal;
+}
+
+
+/* 2nd Slideshow container */
+.slideshow-container1 {
+    position: relative;
+    background: #33298b;
+    height: 280px;
+    top: -4px;
+}
+
+/* Slides */
+.mySlides1 {
+    display: none;
+    text-align: center;
+    padding: 0 200px 50px 200px;
+}
+
+.mySlides1 q{
+    font-family: "Lora", serif ;
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+}
+
+.author1{
+    font-family: "Lora", serif;
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container1 {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot1 {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active,
+.dot1:hover {
+    background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {
+    font-style: italic;
+}
+
+.guide{
+    display: flex;
+    max-width: 100%;
+    margin: auto;
+    justify-content:space-evenly;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.guide img{
+    width: 13%;
+}
+
+.guide-name{
+    display: flex;
+    max-width: 100%;
+    justify-content:space-evenly;
+    align-items: center;
+    padding-top: -10px;
+}
+
+.guide-name :nth-child(2){
+    padding-right: 20px;
+
+}
+.guide-role{
+    display: flex;
+    max-width: 100%;
+    justify-content:space-evenly;
+    justify-items: 60px;
+    /* align-items: center; */
+    padding-top: -10px;
+    font-size: 15px;
+   
+}
+
+.guide-role :nth-child(2){
+  padding-right: 15px;
+  font-weight: lighter;
+}
+
+.guide-role :nth-child(1){
+    padding-right: 70px;
+    font-weight: lighter;
+}
+
+.seperation2{
+    position: relative;
+    top: 30px;
+    height: 100px;
+    background-color: #33298b;
+}
+
+.seperation3{
+    position: relative;
+    height: 800px;
+    background-color: #100e1d;
+}
+
+.below {
+
+}
+
+.box-right{
+    width: 20%;
+}
+
+
+.bottom_pages ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom_pages li {
+    
+}
+
+.bottom_pages a {
+    text-decoration: none;
+}
+
+.box-out{
+    background-image: url(../assets/images/footer\ image.jpg);
+    padding: 40px 0 40px 0;
+    background-size: cover;
+}
+
+.box-left{
+    width: 20%;
+}
+
+.contact{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.box-in{
+    display: flex;
+}
+
+.symbol{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.box-center{
+    width: 20%;
+}
+
+.center-img{
+    width: 200px;
+}
+
+.links{
+    display: flex;
+}
+
+footer{
+    background-color: #454545;
+    color: white;
+    font-size: 20px;
+    padding: 30px 0;
+    text-align: center;
+}
