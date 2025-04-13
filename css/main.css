@@ -38,6 +38,8 @@ nav div img {
 div ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;  /* Ensure the list items wrap properly on small screens */
+    justify-content: center;
 }
 
 div ul li {
@@ -46,11 +48,13 @@ div ul li {
 
 nav {
     display: flex;
+    flex-wrap: wrap; /* Add wrap for responsive behavior */
     max-width: 100%;
     margin: auto;
     justify-content: space-between;
     align-items: center;
     height: 90px;
+    padding: 0 20px;  /* Added padding for better mobile spacing */
 }
 
 /* Main Section */
@@ -86,7 +90,7 @@ nav {
 .about {
     background-color: #d3c8c857;
     text-align: center;
-    padding: 0 170px 50px 170px;
+    padding: 0 10px 50px 10px;  /* Added responsive padding */
     text-align: justify;
     top: -4px;
     position: relative;
@@ -116,7 +120,7 @@ nav {
 .mySlides1 {
     display: none;
     text-align: center;
-    padding: 0 200px 50px 200px;
+    padding: 0 20px;  /* Adjust padding for small screens */
 }
 
 .mySlides1 q {
@@ -186,45 +190,28 @@ nav {
 /* Guide Section */
 .guide {
     display: flex;
-    max-width: 100%;
-    margin: auto;
-    justify-content: space-evenly;
+    flex-wrap: wrap;  /* Allow flex items to wrap on small screens */
+    justify-content: center;
     align-items: center;
     padding-top: 30px;
 }
 
 .guide img {
-    width: 13%;
+    width: 20%;
+    margin: 10px;
 }
 
 .guide-name {
     display: flex;
-    max-width: 100%;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: -10px;
-}
-
-.guide-name :nth-child(2) {
-    padding-right: 20px;
+    flex-wrap: wrap;  /* Allow wrapping on small screens */
+    justify-content: center;
 }
 
 .guide-role {
     display: flex;
-    max-width: 100%;
-    justify-content: space-evenly;
-    padding-top: -10px;
+    flex-wrap: wrap;  /* Allow wrapping on small screens */
+    justify-content: center;
     font-size: 15px;
-}
-
-.guide-role :nth-child(2) {
-    padding-right: 15px;
-    font-weight: lighter;
-}
-
-.guide-role :nth-child(1) {
-    padding-right: 70px;
-    font-weight: lighter;
 }
 
 /* Footer */
@@ -242,8 +229,10 @@ nav {
     background-size: cover;
 }
 
-.box-left {
-    width: 20%;
+.box-left, .box-center, .box-right {
+    width: 33%;  /* Adjusted the width to allow responsive columns */
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .contact {
@@ -253,6 +242,8 @@ nav {
 
 .box-in {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;  /* Allow wrapping for smaller screens */
 }
 
 .symbol {
@@ -261,24 +252,21 @@ nav {
     gap: 10px;
 }
 
-.box-center {
-    width: 20%;
-}
-
-.center-img {
-    width: 200px;
-}
-
 .links {
     display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .bottom_pages ul {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;  /* Allow wrapping for smaller screens */
+    justify-content: center;
 }
 
-.bottom_pages li {}
+.bottom_pages li {
+    margin: 5px 15px;
+}
 
 .bottom_pages a {
     text-decoration: none;
@@ -331,24 +319,32 @@ nav {
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    .box-in {
+    nav {
         flex-direction: column;
         align-items: center;
     }
 
     .box-left, .box-center, .box-right {
-        flex: none;
         width: 100%;
+        margin: 10px 0;
+    }
+
+    .guide img {
+        width: 40%;  /* Adjust for smaller screens */
+        margin: 10px 0;
+    }
+
+    .footer .box-in {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .guide-name, .guide-role {
         text-align: center;
-        margin: 0;
     }
 
-    .center-img {
-        max-width: 150px;
-    }
-
-    .links i {
-        font-size: 2rem;
+    .guide img {
+        width: 40%;
     }
 }
 
@@ -363,5 +359,14 @@ nav {
 
     .links i {
         font-size: 2rem;
+    }
+
+    .footer {
+        font-size: 1rem;  /* Adjust footer font for small screens */
+        padding: 20px 10px;
+    }
+
+    .box-left, .box-center, .box-right {
+        width: 100%;
     }
 }
