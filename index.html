@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Created By CodingLab - www.codinglabweb.com -->
 <html lang="en" dir="ltr">
 
 <head>
@@ -9,17 +8,17 @@
   <title>Little Kidzee School, Manmad</title>
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-  <!-- for search symbol -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-  <header>
+  <header id="header">
     <div class="welcome-message">
       WELCOME TO LITTLE KIDZEE SCHOOL, MANMAD
     </div>
   </header>
-  <nav class="navbar">
+
+  <nav class="navbar" id="navbar">
     <div class="logo">
       <img src="./assets/images/Logo.jpg" alt="Little Kidzee School Logo" />
     </div>
@@ -29,16 +28,15 @@
     </div>
     <div class="menu">
       <ul>
-        <li><a href="index.html" target="_blank">Home</a></li>
-        <li><a href="./html/about.html" target="_blank">About Us</a></li>
-        <li><a href="./html/addmission.html" target="_blank">Admission</a></li>
-        <li><a href="academics.html" target="_blank">Academics</a></li>
-        <li><a href="activities.html" target="_blank">Activities</a></li>
-        <li><a href="Facilities.html" target="_blank">Facilities</a></li>
-        <li><a href="./html/contact.html" target="_blank">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="./html/about.html">About Us</a></li>
+        <li><a href="./html/addmission.html">Admission</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="Facilities.html">Facilities</a></li>
+        <li><a href="./html/contact.html">Contact</a></li>
       </ul>
     </div>
-
     <div class="search">
       <form action="">
         <input type="search" placeholder="Search Courses" name="search" />
@@ -192,24 +190,36 @@
         <h3 class="below">Useful Links</h3>
         <div class="bottom_pages">
           <ul>
-            <li><a href="index.html" target="_blank">Home</a></li>
-            <li><a href="./html/about.html" target="_blank">About Us</a></li>
-            <li><a href="./html/addmission.html" target="_blank">Admission</a></li>
-            <li><a href="academics.html" target="_blank">Academics</a></li>
-            <li><a href="activities.html" target="_blank">Activities</a></li>
-            <li><a href="Facilities.html" target="_blank">Facilities</a></li>
-            <li><a href="./html/contact.html" target="_blank">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./html/about.html">About Us</a></li>
+            <li><a href="./html/addmission.html">Admission</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="Facilities.html">Facilities</a></li>
+            <li><a href="./html/contact.html">Contact</a></li>
           </ul>
         </div>
       </div>
     </div>
   </div>
 
-  <script src="main.js"></script>
-
   <footer>
     This Website is Designed and Developed by Mr. NADEEM SHAIKH (Computer Engineer).
   </footer>
+
+  <script>
+    window.addEventListener('scroll', function () {
+      const header = document.getElementById('header');
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 100) {
+        header.style.display = 'none';
+        navbar.classList.add('fixed-top');
+      } else {
+        header.style.display = 'block';
+        navbar.classList.remove('fixed-top');
+      }
+    });
+  </script>
 
 </body>
 
