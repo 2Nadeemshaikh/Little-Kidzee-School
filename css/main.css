@@ -1,372 +1,147 @@
-@import url('https://fonts.googleapis.com/css2?family=Itim&family=Lilita+One&family=Lora:ital,wght@0,400..700;1,400..700&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Merienda:wght@300..900&family=Pacifico&display=swap');
-
+/* Reset some common styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and general layout */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
 
 /* Header Styling */
-header div {
-    max-width: 100%;
-    text-align: center;
-    padding: 15px;
-    font-family: "Lilita One", sans-serif;
-    background-color: #ebe9e9d9;
-    border: 1px solid black;
-    position: sticky;
-    top: 0;
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
 }
 
-.pages a {
-    text-decoration: none;
-    padding: 15px;
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #444;
 }
 
-nav div img {
-    width: 90px;
-    position: relative;
+.navbar .logo img {
+  max-width: 100px;
+  height: auto;
 }
 
-.school_name {
-    display: flex;
+.navbar .school_name h1,
+.navbar .school_name h2 {
+  color: #fff;
+  margin: 0;
+}
+
+.navbar .menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar .menu ul li {
+  margin: 0 15px;
+}
+
+.navbar .menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar .search input {
+  padding: 5px;
+  border: none;
+}
+
+.navbar .search button {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+}
+
+@media (max-width: 768px) {
+  /* Make the menu stack vertically on small screens */
+  .navbar .menu ul {
     flex-direction: column;
-    color: red;
-}
-
-div ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;  /* Ensure the list items wrap properly on small screens */
-    justify-content: center;
-}
-
-div ul li {
-    list-style: none;
-}
-
-nav {
-    display: flex;
-    flex-wrap: wrap; /* Add wrap for responsive behavior */
-    max-width: 100%;
-    margin: auto;
-    justify-content: space-between;
     align-items: center;
-    height: 90px;
-    padding: 0 20px;  /* Added padding for better mobile spacing */
-}
+  }
 
-/* Main Section */
-.first {
-    position: relative;
-}
+  .navbar .logo img {
+    max-width: 80px;
+  }
 
-.note img {
+  .navbar .school_name h1,
+  .navbar .school_name h2 {
+    font-size: 1.2em;
+  }
+
+  .navbar .search {
     width: 100%;
-    position: relative;
-}
-
-.mySlides {
-    position: absolute;
-    top: 40px;
-    display: none;
-    max-width: 1000px;
-    margin-left: 300px;
-}
-
-.mySlides img {
-    width: 100%;
-}
-
-/* Seperation Bars */
-.seperation1 {
-    top: -4px;
-    height: 8px;
-    background-color: rgb(151, 47, 106);
-    position: relative;
-}
-
-.about {
-    background-color: #d3c8c857;
     text-align: center;
-    padding: 0 10px 50px 10px;  /* Added responsive padding */
-    text-align: justify;
-    top: -4px;
-    position: relative;
-    border-bottom: 1px solid rgb(219, 204, 204);
-}
+  }
 
-.about_head {
-    font-size: 30px;
-    padding-top: 50px;
-    padding-bottom: 30px;
-}
+  .navbar .search input {
+    width: 80%;
+  }
 
-.about p {
-    font-size: 21px;
-    font-family: "Itim", cursive;
-    font-weight: 400;
+  .navbar .search button {
+    width: 20%;
+  }
 }
 
 /* Slideshow */
-.slideshow-container1 {
-    position: relative;
-    background: #33298b;
-    height: 280px;
-    top: -4px;
+.mySlides img {
+  width: 100%;
+  height: auto;
 }
 
-.mySlides1 {
-    display: none;
-    text-align: center;
-    padding: 0 20px;  /* Adjust padding for small screens */
+@media (max-width: 768px) {
+  .mySlides img {
+    height: 200px;
+    object-fit: cover;
+  }
 }
 
-.mySlides1 q {
-    font-family: "Lora", serif;
-    font-size: 20px;
-    color: white;
-    font-weight: 400;
+/* About Us Section */
+.about {
+  padding: 20px;
 }
 
-.author1 {
-    font-family: "Lora", serif;
-    color: white;
-    font-weight: bolder;
-    font-size: 25px;
-    padding-top: 50px;
-    padding-bottom: 30px;
+.about_head {
+  font-size: 2em;
+  margin-bottom: 10px;
 }
 
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -30px;
-    padding: 16px;
-    color: #888;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
+@media (max-width: 768px) {
+  .about_head {
+    font-size: 1.5em;
+  }
 
-.next {
-    position: absolute;
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-}
-
-.dot-container1 {
-    text-align: center;
-    padding: 20px;
-    background: #ddd;
-}
-
-.dot1 {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active,
-.dot1:hover {
-    background-color: #717171;
-}
-
-/* Guide Section */
-.guide {
-    display: flex;
-    flex-wrap: wrap;  /* Allow flex items to wrap on small screens */
-    justify-content: center;
-    align-items: center;
-    padding-top: 30px;
-}
-
-.guide img {
-    width: 20%;
-    margin: 10px;
-}
-
-.guide-name {
-    display: flex;
-    flex-wrap: wrap;  /* Allow wrapping on small screens */
-    justify-content: center;
-}
-
-.guide-role {
-    display: flex;
-    flex-wrap: wrap;  /* Allow wrapping on small screens */
-    justify-content: center;
-    font-size: 15px;
+  .about p {
+    font-size: 0.9em;
+  }
 }
 
 /* Footer */
-.footer {
-    background-color: #454545;
-    color: white;
-    font-size: 20px;
-    padding: 30px 0;
-    text-align: center;
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
 
-.box-out {
-    background-image: url(../assets/images/footer\ image.jpg);
-    padding: 40px 0 40px 0;
-    background-size: cover;
-}
-
-.box-left, .box-center, .box-right {
-    width: 33%;  /* Adjusted the width to allow responsive columns */
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.contact {
-    font-size: 30px;
-    font-weight: 400;
-}
-
-.box-in {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;  /* Allow wrapping for smaller screens */
-}
-
-.symbol {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.links {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.bottom_pages ul {
-    display: flex;
-    flex-wrap: wrap;  /* Allow wrapping for smaller screens */
-    justify-content: center;
-}
-
-.bottom_pages li {
-    margin: 5px 15px;
-}
-
-.bottom_pages a {
-    text-decoration: none;
-}
-
-/* Contact Info */
-.box-left {
-    flex: 1;
-    padding: 20px;
-    font-size: 1rem;
-    text-align: center;
-    max-width: 400px;
-    margin-right: 20px;
-}
-
-.contact {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #2c3e50;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.symbol {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-
-.symbol i {
-    color: #1abc9c;
-    font-size: 1.3rem;
-    margin-right: 10px;
-}
-
-.topic {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #34495e;
-}
-
-.text-one,
-.text-two {
-    font-size: 1rem;
-    color: #7f8c8d;
-    margin-left: 0;
-    margin-top: 5px;
-}
-
-/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .box-left, .box-center, .box-right {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    .guide img {
-        width: 40%;  /* Adjust for smaller screens */
-        margin: 10px 0;
-    }
-
-    .footer .box-in {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .guide-name, .guide-role {
-        text-align: center;
-    }
-
-    .guide img {
-        width: 40%;
-    }
-}
-
-@media (max-width: 480px) {
-    .contact, .below {
-        font-size: 1.2rem;
-    }
-
-    .text-one, .text-two, .bottom_pages ul li a {
-        font-size: 0.9rem;
-    }
-
-    .links i {
-        font-size: 2rem;
-    }
-
-    .footer {
-        font-size: 1rem;  /* Adjust footer font for small screens */
-        padding: 20px 10px;
-    }
-
-    .box-left, .box-center, .box-right {
-        width: 100%;
-    }
+  footer {
+    font-size: 0.8em;
+  }
 }
