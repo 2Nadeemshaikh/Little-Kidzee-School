@@ -21,7 +21,6 @@ header div {
     /* z-index: 100; */
 }
 
-
 .pages a {
     text-decoration: none;
     padding: 15px;
@@ -414,3 +413,307 @@ footer{
     padding: 30px 0;
     text-align: center;
 }
+
+
+
+
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #2c3e50;
+    color: #ec1212;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  .welcome-message {
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #34495e;
+    padding: 10px 20px;
+    height: 80px; /* Set a fixed height for the navbar */
+  }
+  
+  .logo img {
+    height: 100%; /* Make the logo fill the height of the navbar */
+    object-fit: contain; /* Ensure the aspect ratio of the logo is maintained */
+    transform: translateY(-5px); /* Moves the logo up */
+  }
+  
+  .school_name {
+    color: #fff;
+    text-align: center;
+  }
+  
+  .school_name h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .school_name h2 {
+    font-size: 1.2rem;
+    margin-top: 5px;
+  }
+  
+  .menu ul {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .menu ul li {
+    margin: 0 15px;
+  }
+  
+  .menu ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .menu ul li a:hover {
+    color: #1abc9c;
+  }
+  
+  /* Search Form Styling */
+  .search form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search input[type="search"] {
+    padding: 8px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .search button {
+    background-color: #1abc9c;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .search button i {
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .search button:hover {
+    background-color: #16a085;
+  }
+  
+
+
+
+
+
+
+ /* General Reset 2 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, sans-serif; /* Modern, professional font */
+  }
+  
+  body {
+    background-color: #f4f7f6; /* Light background for a clean look */
+    color: #333; /* Dark gray text for better readability */
+    line-height: 1.6;
+  }
+  
+  /* Box Container */
+  .box-out {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #ffffff; /* White background to contrast with page background */
+  }
+  
+  /* Box Inside Layout */
+  .box-in {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap: wrap; /* Ensure content wraps on smaller screens */
+    align-items: flex-start; /* Align items at the start to avoid breaking */
+  }
+  
+  /* Left Section (Contact Info) */
+  .box-left {
+    flex: 1;
+    padding: 20px;
+    font-size: 1rem;
+    text-align: center; /* Center all text inside the contact section */
+    max-width: 400px; /* Limit max width for proper alignment */
+    margin-right: 20px; /* Space between the left and center sections */
+  }
+  
+  .contact {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center; /* Ensure the contact heading is centered */
+  }
+  
+  .address, .email, .phone {
+    margin-bottom: 20px;
+    text-align: center; /* Ensure all sub-points under contact are centered */
+  }
+  
+  .symbol {
+    display: inline-flex; /* Align icon and text horizontally */
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .symbol i {
+    color: #1abc9c;
+    font-size: 1.3rem;
+    margin-right: 10px;
+  }
+  
+  .topic {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #34495e;
+  }
+  
+  .text-one, .text-two {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-left: 0; /* Remove left margin for centering */
+    margin-top: 5px; /* Small spacing between lines */
+  }
+  
+  /* Center Section (Image and Social Media Links) */
+  .box-center {
+    flex: 1;
+    text-align: center; /* Center the content in the middle */
+    padding: 20px;
+  }
+  
+  .center-img {
+    max-width: 200px;
+    margin-bottom: 20px; /* Space between the image and social icons */
+  }
+  
+  .links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .links i {
+    font-size: 2.5rem; /* Increase the size of social media icons */
+    color: #1abc9c;
+    margin: 0 15px; /* Space out icons */
+    transition: color 0.3s ease;
+  }
+  
+  .links i:hover {
+    color: #34495e; /* Change color on hover */
+  }
+  
+  /* Right Section (Useful Links) */
+  .box-right {
+    flex: 1;
+    padding: 20px;
+    text-align: center; /* Center the links */
+    max-width: 400px; /* Limit max width for proper alignment */
+    margin-left: 20px; /* Space between the center and right sections */
+  }
+  
+  .below {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .bottom_pages ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center; /* Center the links */
+  }
+  
+  .bottom_pages ul li {
+    margin-bottom: 10px;
+  }
+  
+  .bottom_pages ul li a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #7f8c8d;
+    transition: color 0.3s ease;
+  }
+  
+  .bottom_pages ul li a:hover {
+    color: #1abc9c; /* Color change on hover */
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .box-in {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .box-left, .box-center, .box-right {
+      flex: none;
+      width: 100%;
+      text-align: center;
+      margin: 0; /* Remove margins on smaller screens */
+    }
+  
+    .center-img {
+      max-width: 150px;
+    }
+  
+    .links i {
+      font-size: 2rem; /* Adjust the size of icons for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact, .below {
+      font-size: 1.2rem;
+    }
+  
+    .text-one, .text-two, .bottom_pages ul li a {
+      font-size: 0.9rem;
+    }
+  
+    .links i {
+      font-size: 2rem; /* Ensure social icons are large enough on smaller screens */
+    }
+  }
+  
+  
+  
+  
